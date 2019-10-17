@@ -1,0 +1,10 @@
+D:\Maria\Onedrive\Docs\Teaching\Алгоритми и Структури от Данни\1к. Софтуерно Инженерство РЕДОВНО - Упражнения (2018)\Упражнение 9\Dijkstra\Dijkstra\bin\Debug\Dijkstra.exe.config
+D:\Maria\Onedrive\Docs\Teaching\Алгоритми и Структури от Данни\1к. Софтуерно Инженерство РЕДОВНО - Упражнения (2018)\Упражнение 9\Dijkstra\Dijkstra\bin\Debug\Dijkstra.exe
+D:\Maria\Onedrive\Docs\Teaching\Алгоритми и Структури от Данни\1к. Софтуерно Инженерство РЕДОВНО - Упражнения (2018)\Упражнение 9\Dijkstra\Dijkstra\bin\Debug\Dijkstra.pdb
+D:\Maria\Onedrive\Docs\Teaching\Алгоритми и Структури от Данни\1к. Софтуерно Инженерство РЕДОВНО - Упражнения (2018)\Упражнение 9\Dijkstra\Dijkstra\obj\Debug\Dijkstra.csprojResolveAssemblyReference.cache
+D:\Maria\Onedrive\Docs\Teaching\Алгоритми и Структури от Данни\1к. Софтуерно Инженерство РЕДОВНО - Упражнения (2018)\Упражнение 9\Dijkstra\Dijkstra\obj\Debug\Dijkstra.csproj.CoreCompileInputs.cache
+D:\Maria\Onedrive\Docs\Teaching\Алгоритми и Структури от Данни\1к. Софтуерно Инженерство РЕДОВНО - Упражнения (2018)\Упражнение 9\Dijkstra\Dijkstra\obj\Debug\Dijkstra.exe
+D:\Maria\Onedrive\Docs\Teaching\Алгоритми и Структури от Данни\1к. Софтуерно Инженерство РЕДОВНО - Упражнения (2018)\Упражнение 9\Dijkstra\Dijkstra\obj\Debug\Dijkstra.pdb
+C:\Users\Acer\Desktop\DijkstraLesson9\Dijkstra\bin\Debug\Dijkstra.exe.config
+C:\Users\Acer\Desktop\DijkstraLesson9\Dijkstra\obj\Debug\Dijkstra.exe
+C:\Users\Acer\Desktop\DijkstraLesson9\Dijkstra\obj\Debug\Dijkstra.pdb

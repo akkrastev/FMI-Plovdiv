@@ -1,0 +1,7 @@
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\PrisonBreak\bin\Debug\PrisonBreak.exe.config
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\PrisonBreak\bin\Debug\PrisonBreak.exe
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\PrisonBreak\bin\Debug\PrisonBreak.pdb
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\PrisonBreak\obj\Debug\PrisonBreak.csprojResolveAssemblyReference.cache
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\PrisonBreak\obj\Debug\PrisonBreak.csproj.CoreCompileInputs.cache
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\PrisonBreak\obj\Debug\PrisonBreak.exe
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\PrisonBreak\obj\Debug\PrisonBreak.pdb

@@ -1,0 +1,81 @@
+﻿@model HospitalManagementSystem2.ViewModels.Doctors.EditVM
+
+@{
+    Layout = null;
+}
+
+
+
+<fieldset>
+    <legend>Edit</legend>
+
+    <form action="/Doctors/Edit" method="post">
+        @Html.HiddenFor(m => m.Id)
+        <table>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.Username)
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.Username)
+                </td>
+                <td>
+                    @Html.ValidationMessageFor(m => m.Username, null, new { style = "color:red" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.Password)
+                </td>
+                <td>
+                    @Html.PasswordFor(m => m.Password)
+                </td>
+                <td>
+                    @Html.ValidationMessageFor(m => m.Password, null, new { style = "color:red" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.FirstName)
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.FirstName)
+                </td>
+                <td>
+                    @Html.ValidationMessageFor(m => m.FirstName, null, new { style = "color:red" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.LastName)
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.LastName)
+                </td>
+                <td>
+                    @Html.ValidationMessageFor(m => m.LastName, null, new { style = "color:red" })
+                </td>
+            </tr>
+            @if (HospitalManagementSystem2.Models.AuthenticationManager.LoggedDoctor.IsAdmin == true)
+            {
+            <tr>
+                <td>
+                    @Html.LabelFor(m => m.IsAdmin)
+                </td>
+                <td>
+                    @Html.CheckBoxFor(m => m.IsAdmin)
+                </td>
+            </tr>
+            }
+            <tr>
+                <td></td>
+                <td>
+                    <input style="float:right;" type="submit" value="Save" />
+                    <a href="@Url.Action("Index","Doctors")">Back to list</a>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+
+    </form>
+</fieldset>

@@ -1,0 +1,63 @@
+﻿@model HospitalManagementSystem2.ViewModels.Medicines.EditVM
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table style="width:100%">
+            <tr>
+                <td>
+                    @using (Html.BeginForm("Edit", "Medicines", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+
+                        @Html.HiddenFor(model => model.Id)
+
+                        <fieldset>
+                            <legend>@(Model.Id > 0 ? "Edit" : "New") Medicine</legend>
+                            <table>
+                                <tr>
+                                    <td>@Html.LabelFor(model => model.MedicineName)</td>
+                                    <td>@Html.TextBoxFor(model => model.MedicineName) @Html.ValidationMessageFor(model => model.MedicineName)</td>
+                                </tr>
+                                
+                                   @if (Model.Id > 0)
+                                {
+                                    
+                                <tr><td>Patients:</td></tr>
+                                    foreach (var item in (ViewBag.Patients as List<Patient>))
+                                    {
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" id="@($"patient{ item.Id} ")" name="PatientIds" value="@item.Id"
+                                                       @if (Model.Patients.Contains(item)) { <text> checked</text> } />
+                                            </td>
+                                            <td>
+                                                <label for="@($"patient{item.Id}")">@($"{item.FirstName} {item.LastName}")</label>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                   <tr>
+                                    <td colspan="2"><input type="submit" value="Save" />&nbsp;<a href="@Url.Action("Index", "Medicines")">Cancel</a></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    }
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+

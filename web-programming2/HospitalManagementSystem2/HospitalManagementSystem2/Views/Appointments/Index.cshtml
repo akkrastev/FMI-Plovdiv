@@ -1,0 +1,133 @@
+﻿@model HospitalManagementSystem2.ViewModels.Appointments.IndexVM
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <h1 style="float:left;">Hospital Managment System</h1>
+                    <div style="float:right; display:inline-block;">
+
+
+                        @if (HospitalManagementSystem2.Models.AuthenticationManager.LoggedDoctor == null &&
+                           HospitalManagementSystem2.Models.AuthenticationManager.LoggedPatient == null)
+                        {
+                            <a style="margin:0 10px;" href="@Url.Action("Login","Home")">Login</a>
+                            <a style="margin:0 10px;float:right" href="@Url.Action("Register","Home")">Register</a>
+                        }
+                        else
+                        {
+                            if (HospitalManagementSystem2.Models.AuthenticationManager.LoggedDoctor != null)
+                            {
+                                <p style="float:left;margin:0 10px;">Welcome,<b>@HospitalManagementSystem2.Models.AuthenticationManager.LoggedDoctor.Username</b></p>
+                            }
+                            else
+                            {
+                                <p style="float:left;margin:0 10px;">Welcome,<b>@HospitalManagementSystem2.Models.AuthenticationManager.LoggedPatient.Username</b></p>
+                            }
+                            <a style="margin:0 10px;float:right" href="@Url.Action("Logout","Home")">Logout</a>
+                        }
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul style="list-style:none;">
+                        <li style="float:left; margin:0 10px;">
+                            <a href="@Url.Action("Index","Home")">Home</a>
+                        </li>
+                        @if (HospitalManagementSystem2.Models.AuthenticationManager.LoggedDoctor != null ||
+                            HospitalManagementSystem2.Models.AuthenticationManager.LoggedPatient != null)
+                        {
+                            <li style="float:left; margin:0 10px;">
+                                <a href="@Url.Action("Index","Patients")">Manage Patients</a>
+                            </li>
+                            <li style="float:left; margin:0 10px;">
+                                <a href="@Url.Action("Index", "Doctors")">Manage Doctors</a>
+                            </li>
+                        }
+                        @if (HospitalManagementSystem2.Models.AuthenticationManager.LoggedDoctor != null)
+                        {
+
+                            <li style="float:left; margin:0 10px;">
+                                <a href="@Url.Action("Index","Appointments")">Manage Appointments</a>
+                            </li>
+                            <li style="float:left; margin:0 10px;">
+                                <a href="@Url.Action("Index","Specializations")">Manage Specializations</a>
+                            </li>
+                            <li style="float:left; margin:0 10px;">
+                                <a href="@Url.Action("Index","Medicines")">Manage Medicines</a>
+                            </li>
+                        }
+
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                @{Model.Doctor = (HospitalManagementSystem2.Entities.Doctor)HospitalManagementSystem2.Models.AuthenticationManager.LoggedDoctor;}
+                @{Model.DoctorId = Model.Doctor.Id;}
+                <td>
+                    <form action="/Appointments/Index" method="get">
+                        @Html.HiddenFor(model => model.DoctorId)
+                        @Html.LabelFor(model => model.Filter.AppointmentDate)
+                        @Html.TextBoxFor(model => model.Filter.AppointmentDate)
+                        <input type="submit" value="Search" />
+                    </form>
+                    <a href="@Url.Action("Edit", "Appointments", new { Id = 0, doctorId = Model.DoctorId, patientId = Model.PatientId})">New</a>
+                    <table>
+                        <tr>
+                            <td>Patient</td>
+                            <td>Doctor</td>
+                            <td>Appointment Date</td>
+                        </tr>
+
+                        @foreach (var item in Model.items)
+                        {
+                            item.Doctor = Model.DoctorList.FirstOrDefault(x => x.Id==item.DoctorId);
+                            item.Patient = Model.PatientList.FirstOrDefault(x => x.Id == item.PatientId);
+                            <tr>
+                                <td>@item.Patient.FirstName @item.Patient.LastName</td>
+                                <td>@item.Doctor.FirstName @item.Doctor.LastName</td>
+                                <td>@item.AppointmentDate</td>
+                                <td><a href="@Url.Action("Edit", "Appointments", new { Id = item.Id,doctorId = Model.DoctorId, patientId = Model.PatientId})">edit</a></td>
+                                <td><a href="@Url.Action("Delete", "Appointments", new { Id = item.Id})">delete</a></td>
+                            </tr>
+                        }
+                    </table>
+                    @{
+                        string pageLink = "?";
+                        for (int i = 0; i < this.Request.QueryString.Count; i++)
+                        {
+                            if (this.Request.QueryString.GetKey(i) != "Pager.Page")
+                            {
+                                pageLink += this.Request.QueryString.GetKey(i) + "=" + Url.Encode(this.Request.QueryString[i]) + "&";
+                            }
+                        }
+                    }
+                    <ul style="list-style-type:none;">
+                        @for (int i = 0; i < Model.Pager.PagesCount; i++)
+                        {
+                            <li style="float:left; margin:0 5px;">
+                                <a href="/@this.ViewContext.RouteData.Values["controller"]/@this.ViewContext.RouteData.Values["action"]@Html.Raw(pageLink)Pager.Page=@(i+1)" style="text-decoration:none; font-weight:@(Model.Pager.Page == (i+1) ? "bold" : "normal")">@(i + 1)</a>
+                            </li>
+                        }
+                    </ul>
+                </td>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

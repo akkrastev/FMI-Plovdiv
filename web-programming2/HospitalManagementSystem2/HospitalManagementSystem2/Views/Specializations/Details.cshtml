@@ -1,0 +1,116 @@
+﻿@model HospitalManagementSystem2.ViewModels.Specializations.DetailsVM
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <h1 style="float:left;">Hospital Managment System</h1>
+                    <div style="float:right; display:inline-block;">
+
+
+                        @if (HospitalManagementSystem2.Models.AuthenticationManager.LoggedDoctor == null &&
+                           HospitalManagementSystem2.Models.AuthenticationManager.LoggedPatient == null)
+                        {
+                            <a style="margin:0 10px;" href="@Url.Action("Login","Home")">Login</a>
+                            <a style="margin:0 10px;float:right" href="@Url.Action("Register","Home")">Register</a>
+                        }
+                        else
+                        {
+                            if (HospitalManagementSystem2.Models.AuthenticationManager.LoggedDoctor != null)
+                            {
+                                <p style="float:left;margin:0 10px;">Welcome,<b>@HospitalManagementSystem2.Models.AuthenticationManager.LoggedDoctor.Username</b></p>
+                            }
+                            else
+                            {
+                                <p style="float:left;margin:0 10px;">Welcome,<b>@HospitalManagementSystem2.Models.AuthenticationManager.LoggedPatient.Username</b></p>
+                            }
+                            <a style="margin:0 10px;float:right" href="@Url.Action("Logout","Home")">Logout</a>
+                        }
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul style="list-style:none;">
+                        <li style="float:left; margin:0 10px;">
+                            <a href="@Url.Action("Index","Home")">Home</a>
+                        </li>
+                        @if (HospitalManagementSystem2.Models.AuthenticationManager.LoggedDoctor != null ||
+                            HospitalManagementSystem2.Models.AuthenticationManager.LoggedPatient != null)
+                        {
+                            <li style="float:left; margin:0 10px;">
+                                <a href="@Url.Action("Index","Patients")">Manage Patients</a>
+                            </li>
+                            <li style="float:left; margin:0 10px;">
+                                <a href="@Url.Action("Index", "Doctors")">Manage Doctors</a>
+                            </li>
+                        }
+                        @if (HospitalManagementSystem2.Models.AuthenticationManager.LoggedDoctor != null)
+                        {
+
+                            <li style="float:left; margin:0 10px;">
+                                <a href="@Url.Action("Index","Appointments")">Manage Appointments</a>
+                            </li>
+                            <li style="float:left; margin:0 10px;">
+                                <a href="@Url.Action("Index","Specializations")">Manage Specializations</a>
+                            </li>
+                            <li style="float:left; margin:0 10px;">
+                                <a href="@Url.Action("Index","Medicines")">Manage Medicines</a>
+                            </li>
+                        }
+
+                    </ul>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Specialization Name:@($"{Model.specialization.SpecializationName} ")</th>
+                            </tr>
+                            <tr>
+                                <th>Doctors who have this specialization: </th>
+
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>First Name</td>
+                            <td>Last Name</td>
+                        </tr>
+                        @foreach (var item in Model.Doctors)
+                        {
+
+                            <tr>
+
+                                <td>@item.FirstName</td>
+                                <td>@item.LastName</td>
+
+                            </tr>
+                        }
+                    </table>
+                    <a class="btn btn-primary" href="@Url.Action("Index","Specializations")">Back to all specializations</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,6 @@
+C:\Users\Acer\Desktop\ExamGame\ExamGame\bin\Debug\ExamGame.exe.config
+C:\Users\Acer\Desktop\ExamGame\ExamGame\bin\Debug\ExamGame.exe
+C:\Users\Acer\Desktop\ExamGame\ExamGame\bin\Debug\ExamGame.pdb
+C:\Users\Acer\Desktop\ExamGame\ExamGame\obj\Debug\ExamGame.csprojResolveAssemblyReference.cache
+C:\Users\Acer\Desktop\ExamGame\ExamGame\obj\Debug\ExamGame.exe
+C:\Users\Acer\Desktop\ExamGame\ExamGame\obj\Debug\ExamGame.pdb

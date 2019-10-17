@@ -1,0 +1,56 @@
+﻿@model HospitalManagementSystem2.ViewModels.PatientDiagnos.EditVM
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <form action="@Url.Action("Edit","PatientDiagnosis")" method="post">
+                        <fieldset>
+                            <legend>@(Model.Id > 0 ? "Edit" : "Add new") diagnosis</legend>
+
+                            @Html.HiddenFor(m => m.Id)
+                            @Html.HiddenFor(m => m.PatientId)
+
+                            <table>
+                                <tr>
+                                    <td>
+                                        @Html.LabelFor(m => m.DiagnosisName)
+                                    </td>
+                                    <td>
+                                        @Html.TextBoxFor(m => m.DiagnosisName)
+                                    </td>
+                                    <td>
+                                        @Html.ValidationMessageFor(m => m.DiagnosisName, null, new { style = "color:red" })
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input style="float:right;" type="submit" value="Save" />
+                                        <a href="@Url.Action("Index", "Patients", new { PatientId = Model.PatientId })">Back to list</a>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </table>
+
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

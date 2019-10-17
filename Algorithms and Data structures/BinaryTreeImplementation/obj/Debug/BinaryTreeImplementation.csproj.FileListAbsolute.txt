@@ -1,0 +1,7 @@
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\BinaryTreeImplementation\bin\Debug\BinaryTreeImplementation.exe.config
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\BinaryTreeImplementation\bin\Debug\BinaryTreeImplementation.exe
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\BinaryTreeImplementation\bin\Debug\BinaryTreeImplementation.pdb
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\BinaryTreeImplementation\obj\Debug\BinaryTreeImplementation.csprojResolveAssemblyReference.cache
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\BinaryTreeImplementation\obj\Debug\BinaryTreeImplementation.csproj.CoreCompileInputs.cache
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\BinaryTreeImplementation\obj\Debug\BinaryTreeImplementation.exe
+C:\Users\fmi\Desktop\PrisonBreak\PrisonBreak\BinaryTreeImplementation\obj\Debug\BinaryTreeImplementation.pdb

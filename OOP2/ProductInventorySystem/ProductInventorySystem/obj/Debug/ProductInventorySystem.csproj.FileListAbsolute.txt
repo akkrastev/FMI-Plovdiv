@@ -1,0 +1,9 @@
+c:\users\acer\documents\visual studio 2015\Projects\ProductInventorySystem\ProductInventorySystem\bin\Debug\ProductInventorySystem.exe.config
+c:\users\acer\documents\visual studio 2015\Projects\ProductInventorySystem\ProductInventorySystem\bin\Debug\ProductInventorySystem.exe
+c:\users\acer\documents\visual studio 2015\Projects\ProductInventorySystem\ProductInventorySystem\bin\Debug\ProductInventorySystem.pdb
+c:\users\acer\documents\visual studio 2015\Projects\ProductInventorySystem\ProductInventorySystem\obj\Debug\ProductInventorySystem.csprojResolveAssemblyReference.cache
+c:\users\acer\documents\visual studio 2015\Projects\ProductInventorySystem\ProductInventorySystem\obj\Debug\ProductInventorySystem.exe
+c:\users\acer\documents\visual studio 2015\Projects\ProductInventorySystem\ProductInventorySystem\obj\Debug\ProductInventorySystem.pdb
+C:\Users\Acer\Desktop\ProductInventorySystem\ProductInventorySystem\bin\Debug\ProductInventorySystem.exe.config
+C:\Users\Acer\Desktop\ProductInventorySystem\ProductInventorySystem\obj\Debug\ProductInventorySystem.exe
+C:\Users\Acer\Desktop\ProductInventorySystem\ProductInventorySystem\obj\Debug\ProductInventorySystem.pdb

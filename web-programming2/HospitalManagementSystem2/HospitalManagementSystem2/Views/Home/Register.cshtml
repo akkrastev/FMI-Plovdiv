@@ -1,0 +1,125 @@
+﻿@using HospitalManagementSystem2.ViewModels.Home
+
+@model RegisterVM
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <h1 style="float:left;">Hospital Managment System</h1>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul style="list-style:none;">
+                        <li style="float:left; margin:0 10px;">
+                            <a href="@Url.Action("Index","Home")">Home</a>
+                        </li>
+                        
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Login</legend>
+
+                        <form action="/Home/Register" method="post">
+                            @Html.ValidationMessage("RegistrationFailed", new { style = "color:red" })
+                            <table>
+                                <tr>
+                                    <td>
+                                        @Html.LabelFor(m => m.Username)
+                                    </td>
+                                    <td>
+                                        @Html.TextBoxFor(m => m.Username)
+                                    </td>
+                                    <td>
+                                        @Html.ValidationMessageFor(m => m.Username, null, new { style = "color:red" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.LabelFor(m => m.Password)
+                                    </td>
+                                    <td>
+                                        @Html.PasswordFor(m => m.Password)
+                                    </td>
+                                    <td>
+                                        @Html.ValidationMessageFor(m => m.Password, null, new { style = "color:red" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.Label("RetypePassword", "Retype Password")
+                                    </td>
+                                    <td>
+                                        @Html.PasswordFor(m => m.RetypePassword)
+                                    </td>
+                                    <td>
+                                        @Html.ValidationMessageFor(m => m.RetypePassword, null, new { style = "color:red" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.LabelFor(m => m.FirstName)
+                                    </td>
+                                    <td>
+                                        @Html.TextBoxFor(m => m.FirstName)
+                                    </td>
+                                    <td>
+                                        @Html.ValidationMessageFor(m => m.FirstName, null, new { style = "color:red" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.LabelFor(m => m.LastName)
+                                    </td>
+                                    <td>
+                                        @Html.TextBoxFor(m => m.LastName)
+                                    </td>
+                                    <td>
+                                        @Html.ValidationMessageFor(m => m.LastName, null, new { style = "color:red" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        @Html.LabelFor(m => m.AccountType)
+                                    </td>
+                                    <td>
+                                        @Html.DropDownListFor(m => m.AccountType,
+                                       new SelectList(Enum.GetValues(typeof(AccType))),"Select Account Type")
+                                    </td>
+                                    <td>
+                                        @Html.ValidationMessageFor(m => m.AccountType, null, new { style = "color:red" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input style="float:right;" type="submit" value="Register" />
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
