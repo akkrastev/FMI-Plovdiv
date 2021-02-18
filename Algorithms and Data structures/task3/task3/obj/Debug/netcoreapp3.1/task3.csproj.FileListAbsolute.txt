@@ -1,0 +1,11 @@
+C:\Users\Ivaylo\Desktop\Tasks\1\task3\task3\bin\Debug\netcoreapp3.1\task3.exe
+C:\Users\Ivaylo\Desktop\Tasks\1\task3\task3\bin\Debug\netcoreapp3.1\task3.deps.json
+C:\Users\Ivaylo\Desktop\Tasks\1\task3\task3\bin\Debug\netcoreapp3.1\task3.runtimeconfig.json
+C:\Users\Ivaylo\Desktop\Tasks\1\task3\task3\bin\Debug\netcoreapp3.1\task3.runtimeconfig.dev.json
+C:\Users\Ivaylo\Desktop\Tasks\1\task3\task3\bin\Debug\netcoreapp3.1\task3.dll
+C:\Users\Ivaylo\Desktop\Tasks\1\task3\task3\bin\Debug\netcoreapp3.1\task3.pdb
+C:\Users\Ivaylo\Desktop\Tasks\1\task3\task3\obj\Debug\netcoreapp3.1\task3.csprojAssemblyReference.cache
+C:\Users\Ivaylo\Desktop\Tasks\1\task3\task3\obj\Debug\netcoreapp3.1\task3.AssemblyInfoInputs.cache
+C:\Users\Ivaylo\Desktop\Tasks\1\task3\task3\obj\Debug\netcoreapp3.1\task3.AssemblyInfo.cs
+C:\Users\Ivaylo\Desktop\Tasks\1\task3\task3\obj\Debug\netcoreapp3.1\task3.dll
+C:\Users\Ivaylo\Desktop\Tasks\1\task3\task3\obj\Debug\netcoreapp3.1\task3.pdb
