@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JYOw3wyk8cEbNuI9qAaU2Frw4kXChiDKVaAch+SBQt6aZ+0CEL0XTZBLRoTh9FANrRQgsyRUkRUDBi3QqSh7VA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ivaylo\\source\\repos\\DrawnMatchesApp\\DrawnMatchesApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivaylo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

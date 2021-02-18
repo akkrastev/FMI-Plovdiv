@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "19oewlJtVrWLONOCaTtQugqRwtgaRjFM+DQbthb0QPHrM4NxkhlrUZS3LXOHEm2hJMusb+4EkyDP79JnXdVRWQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ivaylo\\source\\repos\\WinnerGoalsApp\\WinnerGoalsApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivaylo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

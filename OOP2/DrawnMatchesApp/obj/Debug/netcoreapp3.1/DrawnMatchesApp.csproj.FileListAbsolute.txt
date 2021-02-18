@@ -1,0 +1,15 @@
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\bin\Debug\netcoreapp3.1\DrawnMatchesApp.exe
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\obj\Debug\netcoreapp3.1\DrawnMatchesApp.AssemblyInfoInputs.cache
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\obj\Debug\netcoreapp3.1\DrawnMatchesApp.AssemblyInfo.cs
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\bin\Debug\netcoreapp3.1\DrawnMatchesApp.deps.json
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\bin\Debug\netcoreapp3.1\DrawnMatchesApp.runtimeconfig.json
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\bin\Debug\netcoreapp3.1\DrawnMatchesApp.runtimeconfig.dev.json
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\bin\Debug\netcoreapp3.1\DrawnMatchesApp.dll
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\bin\Debug\netcoreapp3.1\DrawnMatchesApp.pdb
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\obj\Debug\netcoreapp3.1\DrawnMatchesApp.csprojAssemblyReference.cache
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\obj\Debug\netcoreapp3.1\DrawnMatchesApp.csproj.CoreCompileInputs.cache
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\obj\Debug\netcoreapp3.1\DrawnMatchesApp.csproj.CopyComplete
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\obj\Debug\netcoreapp3.1\DrawnMatchesApp.dll
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\obj\Debug\netcoreapp3.1\DrawnMatchesApp.pdb
+C:\Users\Ivaylo\source\repos\DrawnMatchesApp\obj\Debug\netcoreapp3.1\DrawnMatchesApp.genruntimeconfig.cache

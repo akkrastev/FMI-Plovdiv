@@ -1,0 +1,15 @@
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\bin\Debug\netcoreapp3.1\WinnerGoalsApp.exe
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\bin\Debug\netcoreapp3.1\WinnerGoalsApp.deps.json
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\bin\Debug\netcoreapp3.1\WinnerGoalsApp.runtimeconfig.json
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\bin\Debug\netcoreapp3.1\WinnerGoalsApp.runtimeconfig.dev.json
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\bin\Debug\netcoreapp3.1\WinnerGoalsApp.dll
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\bin\Debug\netcoreapp3.1\WinnerGoalsApp.pdb
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\obj\Debug\netcoreapp3.1\WinnerGoalsApp.csprojAssemblyReference.cache
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\obj\Debug\netcoreapp3.1\WinnerGoalsApp.AssemblyInfoInputs.cache
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\obj\Debug\netcoreapp3.1\WinnerGoalsApp.AssemblyInfo.cs
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\obj\Debug\netcoreapp3.1\WinnerGoalsApp.dll
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\obj\Debug\netcoreapp3.1\WinnerGoalsApp.pdb
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\obj\Debug\netcoreapp3.1\WinnerGoalsApp.genruntimeconfig.cache
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\obj\Debug\netcoreapp3.1\WinnerGoalsApp.csproj.CoreCompileInputs.cache
+C:\Users\Ivaylo\source\repos\WinnerGoalsApp\obj\Debug\netcoreapp3.1\WinnerGoalsApp.csproj.CopyComplete
